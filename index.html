@@ -4,6 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <style>
+        .employee {
+            padding: 10px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #f9f9f9;
+        }
+        .employee h2 {
+            margin: 0 0 5px;
+        }
+    </style>
 </head>
 <body>
     <div id="roster"></div>
@@ -17,8 +29,8 @@
         function displayRoster(data) { 
             data.forEach((person) => { 
                 document.getElementById('roster').innerHTML = `
-                    <div>
-                        <h2>${person.title}</h2>
+                    <div class="employee">
+                        <h2>${person.name}</h2>
                         <p>${person.city}</p>
                     </div>
                 `

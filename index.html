@@ -28,7 +28,8 @@
             .catch(error => console.error('Error fetching JSON:', error));
 
         // Step 4 - Define a DOM element 
-        SchoolBus.people.forEach((student) => {
+        SchoolBus.forEach((student) => { 
+            console.log(student);
             document.getElementById('roster').innerHTML = `
                 <div>
                     <h2>${student.title}</h2>

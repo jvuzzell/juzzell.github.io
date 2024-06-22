@@ -1,19 +1,17 @@
-{
-    [
-        {
-            "name": "John",
-            "age": 30,
-            "city": "New York"
-        },
-        {
-            "name": "SAlly",
-            "age": 26,
-            "city": "New York"
-        },
-        {
-            "name": "Burt",
-            "age": 35,
-            "city": "Maryland"
-        }
-    ]
-}
+[
+    {
+        "name": "John",
+        "age": 30,
+        "city": "New York"
+    },
+    {
+        "name": "SAlly",
+        "age": 26,
+        "city": "New York"
+    },
+    {
+        "name": "Burt",
+        "age": 35,
+        "city": "Maryland"
+    }
+]

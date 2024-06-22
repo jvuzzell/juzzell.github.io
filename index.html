@@ -28,12 +28,21 @@
         /* Step 1 - Define data processing method */
         function displayRoster(data) { 
             data.forEach((person) => { 
-                document.getElementById('roster').innerHTML = `
+                
+                // Create a new div for each employee
+                let employeeDiv = document.createElement('div');
+                employeeDiv.className = 'employee';
+
+                // Update template and add it to the new DOM element
+                employeeDiv.innerHTML = `
                     <div class="employee">
                         <h2>${person.name}</h2>
                         <p>${person.city}</p>
                     </div>
-                `
+                `; 
+
+                // Append the new DOM element to the HTML already on the page
+                document.getElementById('roster').appendChild(employeeDiv);
             });
         }
         

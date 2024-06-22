@@ -6,6 +6,18 @@
     <title>Document</title>
 </head>
 <body>
-    <h1>Good Morning Everyone!</h1>
+    <script>
+        // Fetch JSON data from an external source
+        fetch('data.json')
+            .then(response => response.json())
+            .then(data => {
+                // Store the JSON data in a variable
+                var jsonData = data;
+
+                // Output the JSON data to the console
+                console.log(jsonData);
+            })
+            .catch(error => console.error('Error fetching JSON:', error));
+    </script>
 </body>
 </html>
